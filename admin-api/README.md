@@ -95,8 +95,11 @@ npm run build
 
 
 ### 数据库
-1. SQLite
+1. SQLite安装
 `https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/configurations/databases/sqlite.html`
+2. npm install 时也同时就安装了sqlite，上面的是单独安装
+3. 项目的数据存储于.tmp/data.db文件，部署时如果没有该文件，则会根据模型的schema重新创建数据库，所以，数据模型需要现在本地开发好后部署上去，而是不是在正式环境去建立数据模型，因为这样本地开发的仓库中就没有数据模型的schema，需要通过git同步
+4. 数据导出与导入
 
 
 ### 部署
@@ -118,8 +121,11 @@ NODE_ENV=production npm start
 
 4. 可以使用pm2管理进程，并配合nginx进行反向代理
 
+[pm2](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment/optional-software/process-manager.html)
 
 
+5. centos 7.6
+g++: error: unrecognized command line option ‘-std=c++14’，gcc版本过低导致sqlite安装时编译失败
 
-
-
+https://zhuanlan.zhihu.com/p/600011675
+安装完后重启终端
