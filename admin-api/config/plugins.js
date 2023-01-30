@@ -16,5 +16,8 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  // ...
+  'nuxt-tools': {
+    enabled: true,
+    resolve: './src/plugins/nuxt-tools', // path to plugin folder
+  },
 })

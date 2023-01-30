@@ -73,3 +73,12 @@ g++: error: unrecognized command line option ‘-std=c++14’，gcc版本过低�
 
 https://zhuanlan.zhihu.com/p/600011675
 安装完后重启终端
+
+### 前端项目管理插件
+1. [掘金博客](https://juejin.cn/post/7127660343408459812)
+2. [插件创建](https://docs.strapi.io/developer-docs/latest/development/plugins-development.html#create-a-plugin)
+3. [插件接口](https://docs.strapi.io/developer-docs/latest/developer-resources/plugin-api-reference/server.html)
+4. [组件库](https://design-system.strapi.io/)
+5. 去github参考已经开源的官方插件进行开发
+6. 插件项目分为admin和server，分别是管理界面和接口部分，管理界面基于react，server基于koa
+7. server开发流程：service->controller->route
