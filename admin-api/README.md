@@ -82,3 +82,4 @@ https://zhuanlan.zhihu.com/p/600011675
 5. 去github参考已经开源的官方插件进行开发
 6. 插件项目分为admin和server，分别是管理界面和接口部分，管理界面基于react，server基于koa
 7. server开发流程：service->controller->route
+8. axiosInstance的请求路径要以`/`开头，不然部署后请求路径会多出/admin/plugins

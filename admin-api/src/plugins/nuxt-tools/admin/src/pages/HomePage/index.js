@@ -10,22 +10,22 @@ import axiosInstance from '../../utils/axiosInstance'
 import pluginId from '../../pluginId'
 const HomePage = () => {
   function getStatus() {
-    axiosInstance.get(`${pluginId}/dashboard/getStatus`)
+    axiosInstance.get(`/${pluginId}/dashboard/getStatus`)
   }
   function generatePages() {
-    axiosInstance.get(`${pluginId}/dashboard/generate`)
+    axiosInstance.get(`/${pluginId}/dashboard/generate`)
   }
   function build() {
-    axiosInstance.get(`${pluginId}/dashboard/build`)
+    axiosInstance.get(`/${pluginId}/dashboard/build`)
   }
   function start() {
-    axiosInstance.get(`${pluginId}/dashboard/start`)
+    axiosInstance.get(`/${pluginId}/dashboard/start`)
   }
   function stop() {
-    axiosInstance.get(`${pluginId}/dashboard/stop`)
+    axiosInstance.get(`/${pluginId}/dashboard/stop`)
   }
   function restart() {
-    // axiosInstance.get(`${pluginId}/dashboard/restart`)
+    // axiosInstance.get(`/${pluginId}/dashboard/restart`)
   }
   return (
     <div style={{ padding: '20px' }}>
