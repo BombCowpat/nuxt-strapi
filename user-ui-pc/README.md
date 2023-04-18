@@ -10,5 +10,9 @@
 3. https://strapi.io/integrations/nuxtjs-cms
 4. https://www.npmjs.com/package/@nuxtjs/strapi
 
+### fetch 的坑
+如果使用静态网站方式部署，为了在客户端不发送请求，必须要设置为静态模式`target: 'static'`
+https://nuxtjs.org/docs/features/deployment-targets#static-hosting
+
 
 
